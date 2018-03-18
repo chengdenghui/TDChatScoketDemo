@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04706FDC205E0FAB00F25CD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FDB205E0FAB00F25CD8 /* AppDelegate.m */; };
+		04706FDF205E0FAB00F25CD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FDE205E0FAB00F25CD8 /* ViewController.m */; };
+		04706FE2205E0FAB00F25CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE0205E0FAB00F25CD8 /* Main.storyboard */; };
+		04706FE4205E0FAB00F25CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE3205E0FAB00F25CD8 /* Assets.xcassets */; };
+		04706FE7205E0FAB00F25CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */; };
+		04706FEA205E0FAB00F25CD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FE9205E0FAB00F25CD8 /* main.m */; };
+		04706FF4205E0FAB00F25CD8 /* TDChatScoketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FF3205E0FAB00F25CD8 /* TDChatScoketDemoTests.m */; };
+		04706FFF205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FFE205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04706FF0205E0FAB00F25CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04706FCF205E0FAB00F25CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04706FD6205E0FAB00F25CD8;
+			remoteInfo = TDChatScoketDemo;
+		};
+		04706FFB205E0FAB00F25CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04706FCF205E0FAB00F25CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04706FD6205E0FAB00F25CD8;
+			remoteInfo = TDChatScoketDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04706FD7205E0FAB00F25CD8 /* TDChatScoketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDChatScoketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04706FDA205E0FAB00F25CD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04706FDB205E0FAB00F25CD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04706FDD205E0FAB00F25CD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04706FDE205E0FAB00F25CD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04706FE1205E0FAB00F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04706FE3205E0FAB00F25CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04706FE6205E0FAB00F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04706FE8205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04706FE9205E0FAB00F25CD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04706FEF205E0FAB00F25CD8 /* TDChatScoketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDChatScoketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04706FF3205E0FAB00F25CD8 /* TDChatScoketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDChatScoketDemoTests.m; sourceTree = "<group>"; };
+		04706FF5205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04706FFA205E0FAB00F25CD8 /* TDChatScoketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDChatScoketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04706FFE205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDChatScoketDemoUITests.m; sourceTree = "<group>"; };
+		04707000205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04706FD4205E0FAB00F25CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FEC205E0FAB00F25CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FF7205E0FAB00F25CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04706FCE205E0FAB00F25CD8 = {
+			isa = PBXGroup;
+			children = (
+				04706FD9205E0FAB00F25CD8 /* TDChatScoketDemo */,
+				04706FF2205E0FAB00F25CD8 /* TDChatScoketDemoTests */,
+				04706FFD205E0FAB00F25CD8 /* TDChatScoketDemoUITests */,
+				04706FD8205E0FAB00F25CD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04706FD8205E0FAB00F25CD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04706FD7205E0FAB00F25CD8 /* TDChatScoketDemo.app */,
+				04706FEF205E0FAB00F25CD8 /* TDChatScoketDemoTests.xctest */,
+				04706FFA205E0FAB00F25CD8 /* TDChatScoketDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04706FD9205E0FAB00F25CD8 /* TDChatScoketDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04706FDA205E0FAB00F25CD8 /* AppDelegate.h */,
+				04706FDB205E0FAB00F25CD8 /* AppDelegate.m */,
+				04706FDD205E0FAB00F25CD8 /* ViewController.h */,
+				04706FDE205E0FAB00F25CD8 /* ViewController.m */,
+				04706FE0205E0FAB00F25CD8 /* Main.storyboard */,
+				04706FE3205E0FAB00F25CD8 /* Assets.xcassets */,
+				04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */,
+				04706FE8205E0FAB00F25CD8 /* Info.plist */,
+				04706FE9205E0FAB00F25CD8 /* main.m */,
+			);
+			path = TDChatScoketDemo;
+			sourceTree = "<group>";
+		};
+		04706FF2205E0FAB00F25CD8 /* TDChatScoketDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04706FF3205E0FAB00F25CD8 /* TDChatScoketDemoTests.m */,
+				04706FF5205E0FAB00F25CD8 /* Info.plist */,
+			);
+			path = TDChatScoketDemoTests;
+			sourceTree = "<group>";
+		};
+		04706FFD205E0FAB00F25CD8 /* TDChatScoketDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04706FFE205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m */,
+				04707000205E0FAB00F25CD8 /* Info.plist */,
+			);
+			path = TDChatScoketDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04706FD6205E0FAB00F25CD8 /* TDChatScoketDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04707003205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemo" */;
+			buildPhases = (
+				04706FD3205E0FAB00F25CD8 /* Sources */,
+				04706FD4205E0FAB00F25CD8 /* Frameworks */,
+				04706FD5205E0FAB00F25CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDChatScoketDemo;
+			productName = TDChatScoketDemo;
+			productReference = 04706FD7205E0FAB00F25CD8 /* TDChatScoketDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04706FEE205E0FAB00F25CD8 /* TDChatScoketDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04707006205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemoTests" */;
+			buildPhases = (
+				04706FEB205E0FAB00F25CD8 /* Sources */,
+				04706FEC205E0FAB00F25CD8 /* Frameworks */,
+				04706FED205E0FAB00F25CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04706FF1205E0FAB00F25CD8 /* PBXTargetDependency */,
+			);
+			name = TDChatScoketDemoTests;
+			productName = TDChatScoketDemoTests;
+			productReference = 04706FEF205E0FAB00F25CD8 /* TDChatScoketDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04706FF9205E0FAB00F25CD8 /* TDChatScoketDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04707009205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemoUITests" */;
+			buildPhases = (
+				04706FF6205E0FAB00F25CD8 /* Sources */,
+				04706FF7205E0FAB00F25CD8 /* Frameworks */,
+				04706FF8205E0FAB00F25CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04706FFC205E0FAB00F25CD8 /* PBXTargetDependency */,
+			);
+			name = TDChatScoketDemoUITests;
+			productName = TDChatScoketDemoUITests;
+			productReference = 04706FFA205E0FAB00F25CD8 /* TDChatScoketDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04706FCF205E0FAB00F25CD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = hui;
+				TargetAttributes = {
+					04706FD6205E0FAB00F25CD8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					04706FEE205E0FAB00F25CD8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04706FD6205E0FAB00F25CD8;
+					};
+					04706FF9205E0FAB00F25CD8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04706FD6205E0FAB00F25CD8;
+					};
+				};
+			};
+			buildConfigurationList = 04706FD2205E0FAB00F25CD8 /* Build configuration list for PBXProject "TDChatScoketDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04706FCE205E0FAB00F25CD8;
+			productRefGroup = 04706FD8205E0FAB00F25CD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04706FD6205E0FAB00F25CD8 /* TDChatScoketDemo */,
+				04706FEE205E0FAB00F25CD8 /* TDChatScoketDemoTests */,
+				04706FF9205E0FAB00F25CD8 /* TDChatScoketDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04706FD5205E0FAB00F25CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04706FE7205E0FAB00F25CD8 /* LaunchScreen.storyboard in Resources */,
+				04706FE4205E0FAB00F25CD8 /* Assets.xcassets in Resources */,
+				04706FE2205E0FAB00F25CD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FED205E0FAB00F25CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FF8205E0FAB00F25CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04706FD3205E0FAB00F25CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04706FDF205E0FAB00F25CD8 /* ViewController.m in Sources */,
+				04706FEA205E0FAB00F25CD8 /* main.m in Sources */,
+				04706FDC205E0FAB00F25CD8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FEB205E0FAB00F25CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04706FF4205E0FAB00F25CD8 /* TDChatScoketDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04706FF6205E0FAB00F25CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04706FFF205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04706FF1205E0FAB00F25CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04706FD6205E0FAB00F25CD8 /* TDChatScoketDemo */;
+			targetProxy = 04706FF0205E0FAB00F25CD8 /* PBXContainerItemProxy */;
+		};
+		04706FFC205E0FAB00F25CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04706FD6205E0FAB00F25CD8 /* TDChatScoketDemo */;
+			targetProxy = 04706FFB205E0FAB00F25CD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04706FE0205E0FAB00F25CD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04706FE1205E0FAB00F25CD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04706FE6205E0FAB00F25CD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04707001205E0FAB00F25CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04707002205E0FAB00F25CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04707004205E0FAB00F25CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04707005205E0FAB00F25CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04707007205E0FAB00F25CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDChatScoketDemo.app/TDChatScoketDemo";
+			};
+			name = Debug;
+		};
+		04707008205E0FAB00F25CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDChatScoketDemo.app/TDChatScoketDemo";
+			};
+			name = Release;
+		};
+		0470700A205E0FAB00F25CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDChatScoketDemo;
+			};
+			name = Debug;
+		};
+		0470700B205E0FAB00F25CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDChatScoketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDChatScoketDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04706FD2205E0FAB00F25CD8 /* Build configuration list for PBXProject "TDChatScoketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04707001205E0FAB00F25CD8 /* Debug */,
+				04707002205E0FAB00F25CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04707003205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04707004205E0FAB00F25CD8 /* Debug */,
+				04707005205E0FAB00F25CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04707006205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04707007205E0FAB00F25CD8 /* Debug */,
+				04707008205E0FAB00F25CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04707009205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0470700A205E0FAB00F25CD8 /* Debug */,
+				0470700B205E0FAB00F25CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04706FCF205E0FAB00F25CD8 /* Project object */;
+}
