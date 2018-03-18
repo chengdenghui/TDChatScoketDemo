@@ -20,7 +20,8 @@
 		04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */; };
 		ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */; };
 		ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C682205EA73C003B5050 /* ChatImageTableViewCell.m */; };
-		ABF5C686205EAF42003B5050 /* ChatDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C685205EAF42003B5050 /* ChatDetailModel.m */; };
+		ABF5C68A205EAFF2003B5050 /* ChatDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */; };
+		ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C68D205EB032003B5050 /* ChatListModel.m */; };
 		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +71,10 @@
 		ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextTableViewCell.m; sourceTree = "<group>"; };
 		ABF5C681205EA73C003B5050 /* ChatImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatImageTableViewCell.h; sourceTree = "<group>"; };
 		ABF5C682205EA73C003B5050 /* ChatImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatImageTableViewCell.m; sourceTree = "<group>"; };
-		ABF5C684205EAF42003B5050 /* ChatDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ChatDetailModel.h; path = TDChatScoketDemo/ChatDetail/Views/ChatDetailModel.h; sourceTree = SOURCE_ROOT; };
-		ABF5C685205EAF42003B5050 /* ChatDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ChatDetailModel.m; path = TDChatScoketDemo/ChatDetail/Views/ChatDetailModel.m; sourceTree = SOURCE_ROOT; };
+		ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailModel.m; sourceTree = "<group>"; };
+		ABF5C689205EAFF2003B5050 /* ChatDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDetailModel.h; sourceTree = "<group>"; };
+		ABF5C68C205EB032003B5050 /* ChatListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatListModel.h; sourceTree = "<group>"; };
+		ABF5C68D205EB032003B5050 /* ChatListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatListModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				04707020205E134700F25CD8 /* Controller */,
-				04707021205E134700F25CD8 /* Model */,
+				ABF5C687205EAFF2003B5050 /* Model */,
 				04707022205E134700F25CD8 /* Views */,
 			);
 			path = ChatDetail;
@@ -182,15 +185,6 @@
 				0470702F205E142E00F25CD8 /* ChatDetailViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		04707021205E134700F25CD8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				ABF5C684205EAF42003B5050 /* ChatDetailModel.h */,
-				ABF5C685205EAF42003B5050 /* ChatDetailModel.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		04707022205E134700F25CD8 /* Views */ = {
@@ -208,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				04707028205E138200F25CD8 /* Controller */,
-				04707029205E138200F25CD8 /* Model */,
+				ABF5C68B205EB018003B5050 /* Model */,
 				0470702A205E138200F25CD8 /* Views */,
 			);
 			path = MainChatList;
@@ -221,13 +215,6 @@
 				0470702C205E139800F25CD8 /* MainChatListViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		04707029205E138200F25CD8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0470702A205E138200F25CD8 /* Views */ = {
@@ -254,6 +241,24 @@
 				A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF5C687205EAFF2003B5050 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF5C689205EAFF2003B5050 /* ChatDetailModel.h */,
+				ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABF5C68B205EB018003B5050 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF5C68C205EB032003B5050 /* ChatListModel.h */,
+				ABF5C68D205EB032003B5050 /* ChatListModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,10 +449,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF5C686205EAF42003B5050 /* ChatDetailModel.m in Sources */,
 				04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */,
+				ABF5C68A205EAFF2003B5050 /* ChatDetailModel.m in Sources */,
 				ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */,
 				ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */,
+				ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */,
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
