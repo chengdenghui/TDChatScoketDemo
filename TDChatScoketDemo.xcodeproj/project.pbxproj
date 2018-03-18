@@ -22,6 +22,7 @@
 		ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C682205EA73C003B5050 /* ChatImageTableViewCell.m */; };
 		ABF5C68A205EAFF2003B5050 /* ChatDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */; };
 		ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C68D205EB032003B5050 /* ChatListModel.m */; };
+		ABF5C694205EB4BF003B5050 /* ChatKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C693205EB4BF003B5050 /* ChatKeyboardView.m */; };
 		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,8 @@
 		ABF5C689205EAFF2003B5050 /* ChatDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDetailModel.h; sourceTree = "<group>"; };
 		ABF5C68C205EB032003B5050 /* ChatListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatListModel.h; sourceTree = "<group>"; };
 		ABF5C68D205EB032003B5050 /* ChatListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatListModel.m; sourceTree = "<group>"; };
+		ABF5C692205EB4BF003B5050 /* ChatKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatKeyboardView.h; sourceTree = "<group>"; };
+		ABF5C693205EB4BF003B5050 /* ChatKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatKeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 		04707022205E134700F25CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ABF5C692205EB4BF003B5050 /* ChatKeyboardView.h */,
+				ABF5C693205EB4BF003B5050 /* ChatKeyboardView.m */,
 				ABF5C67E205EA5E7003B5050 /* ChatTextTableViewCell.h */,
 				ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */,
 				ABF5C681205EA73C003B5050 /* ChatImageTableViewCell.h */,
@@ -454,6 +459,7 @@
 				ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */,
 				ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */,
 				ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */,
+				ABF5C694205EB4BF003B5050 /* ChatKeyboardView.m in Sources */,
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
