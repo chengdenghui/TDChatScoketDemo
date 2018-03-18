@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04706FDC205E0FAB00F25CD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FDB205E0FAB00F25CD8 /* AppDelegate.m */; };
-		04706FDF205E0FAB00F25CD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FDE205E0FAB00F25CD8 /* ViewController.m */; };
-		04706FE2205E0FAB00F25CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE0205E0FAB00F25CD8 /* Main.storyboard */; };
-		04706FE4205E0FAB00F25CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE3205E0FAB00F25CD8 /* Assets.xcassets */; };
-		04706FE7205E0FAB00F25CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */; };
-		04706FEA205E0FAB00F25CD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FE9205E0FAB00F25CD8 /* main.m */; };
 		04706FF4205E0FAB00F25CD8 /* TDChatScoketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FF3205E0FAB00F25CD8 /* TDChatScoketDemoTests.m */; };
 		04706FFF205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04706FFE205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m */; };
+		04707019205E117200F25CD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707011205E117200F25CD8 /* AppDelegate.m */; };
+		0470701A205E117200F25CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04707012205E117200F25CD8 /* Assets.xcassets */; };
+		0470701B205E117200F25CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04707013205E117200F25CD8 /* LaunchScreen.storyboard */; };
+		0470701C205E117200F25CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04707015205E117200F25CD8 /* Main.storyboard */; };
+		0470701D205E117200F25CD8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04707017205E117200F25CD8 /* Info.plist */; };
+		0470701E205E117200F25CD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707018205E117200F25CD8 /* main.m */; };
+		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,21 @@
 
 /* Begin PBXFileReference section */
 		04706FD7205E0FAB00F25CD8 /* TDChatScoketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDChatScoketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		04706FDA205E0FAB00F25CD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		04706FDB205E0FAB00F25CD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04706FDD205E0FAB00F25CD8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04706FDE205E0FAB00F25CD8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04706FE1205E0FAB00F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04706FE3205E0FAB00F25CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04706FE6205E0FAB00F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		04706FE8205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04706FE9205E0FAB00F25CD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04706FEF205E0FAB00F25CD8 /* TDChatScoketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDChatScoketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04706FF3205E0FAB00F25CD8 /* TDChatScoketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDChatScoketDemoTests.m; sourceTree = "<group>"; };
 		04706FF5205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04706FFA205E0FAB00F25CD8 /* TDChatScoketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDChatScoketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04706FFE205E0FAB00F25CD8 /* TDChatScoketDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDChatScoketDemoUITests.m; sourceTree = "<group>"; };
 		04707000205E0FAB00F25CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04707010205E117200F25CD8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04707011205E117200F25CD8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04707012205E117200F25CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04707014205E117200F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04707016205E117200F25CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04707017205E117200F25CD8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04707018205E117200F25CD8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0470702B205E139800F25CD8 /* MainChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListViewController.h; sourceTree = "<group>"; };
+		0470702C205E139800F25CD8 /* MainChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +102,9 @@
 		04706FD9205E0FAB00F25CD8 /* TDChatScoketDemo */ = {
 			isa = PBXGroup;
 			children = (
-				04706FDA205E0FAB00F25CD8 /* AppDelegate.h */,
-				04706FDB205E0FAB00F25CD8 /* AppDelegate.m */,
-				04706FDD205E0FAB00F25CD8 /* ViewController.h */,
-				04706FDE205E0FAB00F25CD8 /* ViewController.m */,
-				04706FE0205E0FAB00F25CD8 /* Main.storyboard */,
-				04706FE3205E0FAB00F25CD8 /* Assets.xcassets */,
-				04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */,
-				04706FE8205E0FAB00F25CD8 /* Info.plist */,
-				04706FE9205E0FAB00F25CD8 /* main.m */,
+				04707027205E138200F25CD8 /* MainChatList */,
+				0470701F205E134700F25CD8 /* ChatDetail */,
+				0470700F205E117200F25CD8 /* Others */,
 			);
 			path = TDChatScoketDemo;
 			sourceTree = "<group>";
@@ -130,6 +125,84 @@
 				04707000205E0FAB00F25CD8 /* Info.plist */,
 			);
 			path = TDChatScoketDemoUITests;
+			sourceTree = "<group>";
+		};
+		0470700F205E117200F25CD8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				04707010205E117200F25CD8 /* AppDelegate.h */,
+				04707011205E117200F25CD8 /* AppDelegate.m */,
+				04707012205E117200F25CD8 /* Assets.xcassets */,
+				04707013205E117200F25CD8 /* LaunchScreen.storyboard */,
+				04707015205E117200F25CD8 /* Main.storyboard */,
+				04707017205E117200F25CD8 /* Info.plist */,
+				04707018205E117200F25CD8 /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0470701F205E134700F25CD8 /* ChatDetail */ = {
+			isa = PBXGroup;
+			children = (
+				04707020205E134700F25CD8 /* Controller */,
+				04707021205E134700F25CD8 /* Model */,
+				04707022205E134700F25CD8 /* Views */,
+			);
+			path = ChatDetail;
+			sourceTree = "<group>";
+		};
+		04707020205E134700F25CD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04707021205E134700F25CD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04707022205E134700F25CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04707027205E138200F25CD8 /* MainChatList */ = {
+			isa = PBXGroup;
+			children = (
+				04707028205E138200F25CD8 /* Controller */,
+				04707029205E138200F25CD8 /* Model */,
+				0470702A205E138200F25CD8 /* Views */,
+			);
+			path = MainChatList;
+			sourceTree = "<group>";
+		};
+		04707028205E138200F25CD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0470702B205E139800F25CD8 /* MainChatListViewController.h */,
+				0470702C205E139800F25CD8 /* MainChatListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04707029205E138200F25CD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0470702A205E138200F25CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04706FE7205E0FAB00F25CD8 /* LaunchScreen.storyboard in Resources */,
-				04706FE4205E0FAB00F25CD8 /* Assets.xcassets in Resources */,
-				04706FE2205E0FAB00F25CD8 /* Main.storyboard in Resources */,
+				0470701A205E117200F25CD8 /* Assets.xcassets in Resources */,
+				0470701C205E117200F25CD8 /* Main.storyboard in Resources */,
+				0470701B205E117200F25CD8 /* LaunchScreen.storyboard in Resources */,
+				0470701D205E117200F25CD8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04706FDF205E0FAB00F25CD8 /* ViewController.m in Sources */,
-				04706FEA205E0FAB00F25CD8 /* main.m in Sources */,
-				04706FDC205E0FAB00F25CD8 /* AppDelegate.m in Sources */,
+				0470701E205E117200F25CD8 /* main.m in Sources */,
+				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
+				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,20 +377,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04706FE0205E0FAB00F25CD8 /* Main.storyboard */ = {
+		04707013205E117200F25CD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				04706FE1205E0FAB00F25CD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04706FE5205E0FAB00F25CD8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04706FE6205E0FAB00F25CD8 /* Base */,
+				04707014205E117200F25CD8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04707015205E117200F25CD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04707016205E117200F25CD8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,7 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TDChatScoketDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TDChatScoketDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

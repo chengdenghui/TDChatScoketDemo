@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainChatListViewController.h
 //  TDChatScoketDemo
 //
 //  Created by mac on 2018/3/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainChatListViewController : UIViewController
 
 @end
-
