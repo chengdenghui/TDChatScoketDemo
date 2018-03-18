@@ -8,9 +8,8 @@
 
 #import "MainChatListViewController.h"
 #import "ChatDetailViewController.h"
+#import "MainChatListTableViewCell.h"
 
-#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-#define SCREEN_WITH    [UIScreen mainScreen].bounds.size.width
 
 @interface MainChatListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -23,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor =[UIColor orangeColor];
+    self.view.backgroundColor =[UIColor whiteColor];
     self.title =@"聊天列表";
     self.tableview.backgroundColor =[UIColor whiteColor];
 }
@@ -36,12 +35,12 @@
 #pragma mark ---tableViewDelegate---
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 10;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 80;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -49,14 +48,13 @@
     //详情
     static NSString *cellID = @"cellId";
     
-    UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:cellID];
+    MainChatListTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:cellID];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell = [[MainChatListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.backgroundColor =[UIColor orangeColor];
-    cell.textLabel.text =@"大家好";
+    [cell getDateWithModel:nil];
     return cell;
 }
 
@@ -81,7 +79,7 @@
 #warning 注意在tableView中必须进行代理的相关设置 不然不能正常显示--------
         _tableview.delegate =self;
         _tableview.dataSource =self;
-        _tableview.separatorStyle=UITableViewCellSeparatorStyleNone;
+//        _tableview.separatorStyle=UITableViewCellSeparatorStyleNone;
         _tableview.showsVerticalScrollIndicator=NO;
         [self.view addSubview:_tableview];
     }

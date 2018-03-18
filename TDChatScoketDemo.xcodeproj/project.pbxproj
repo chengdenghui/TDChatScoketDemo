@@ -18,6 +18,7 @@
 		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
 		04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702F205E142E00F25CD8 /* ChatDetailViewController.m */; };
 		04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */; };
+		04EE4675205E4DA30021D6C5 /* ChatDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */; };
 		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,9 @@
 		0470702F205E142E00F25CD8 /* ChatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
 		04707031205E16FD00F25CD8 /* MainChatListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListTableViewCell.h; sourceTree = "<group>"; };
 		04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListTableViewCell.m; sourceTree = "<group>"; };
+		04EE4672205E4B380021D6C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04EE4673205E4DA30021D6C5 /* ChatDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDetailTableViewCell.h; sourceTree = "<group>"; };
+		04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailTableViewCell.m; sourceTree = "<group>"; };
 		58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDChatScoketDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,7 @@
 		0470700F205E117200F25CD8 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				04EE4672205E4B380021D6C5 /* PrefixHeader.pch */,
 				04707010205E117200F25CD8 /* AppDelegate.h */,
 				04707011205E117200F25CD8 /* AppDelegate.m */,
 				04707012205E117200F25CD8 /* Assets.xcassets */,
@@ -183,6 +188,8 @@
 		04707022205E134700F25CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04EE4673205E4DA30021D6C5 /* ChatDetailTableViewCell.h */,
+				04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +438,7 @@
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
+				04EE4675205E4DA30021D6C5 /* ChatDetailTableViewCell.m in Sources */,
 				04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +532,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -577,6 +586,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -596,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = TDChatScoketDemo/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -611,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = TDChatScoketDemo/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

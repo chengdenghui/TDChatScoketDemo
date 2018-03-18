@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  TDChatScoketDemo
+//
+//  Created by mac on 2018/3/18.
+//  Copyright © 2018年 hui. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WITH    [UIScreen mainScreen].bounds.size.width
+
+#import <Masonry.h>
+
+
+#endif /* PrefixHeader_pch */
