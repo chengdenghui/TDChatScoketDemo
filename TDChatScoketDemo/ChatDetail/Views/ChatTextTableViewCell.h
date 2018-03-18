@@ -1,14 +1,14 @@
 //
-//  ChatDetailTableViewCell.h
+//  ChatTextTableViewCell.h
 //  TDChatScoketDemo
 //
-//  Created by mac on 2018/3/18.
+//  Created by 程登伟 on 2018/3/18.
 //  Copyright © 2018年 hui. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ChatDetailTableViewCell : UITableViewCell
+@interface ChatTextTableViewCell : UITableViewCell
 
 @property(nonatomic,strong)id model;
 

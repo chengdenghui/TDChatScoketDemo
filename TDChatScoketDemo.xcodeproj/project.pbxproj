@@ -18,7 +18,7 @@
 		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
 		04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702F205E142E00F25CD8 /* ChatDetailViewController.m */; };
 		04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */; };
-		04EE4675205E4DA30021D6C5 /* ChatDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */; };
+		ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */; };
 		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +61,11 @@
 		04707031205E16FD00F25CD8 /* MainChatListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListTableViewCell.h; sourceTree = "<group>"; };
 		04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListTableViewCell.m; sourceTree = "<group>"; };
 		04EE4672205E4B380021D6C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		04EE4673205E4DA30021D6C5 /* ChatDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDetailTableViewCell.h; sourceTree = "<group>"; };
-		04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailTableViewCell.m; sourceTree = "<group>"; };
 		58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDChatScoketDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF5C67E205EA5E7003B5050 /* ChatTextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatTextTableViewCell.h; sourceTree = "<group>"; };
+		ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +188,8 @@
 		04707022205E134700F25CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				04EE4673205E4DA30021D6C5 /* ChatDetailTableViewCell.h */,
-				04EE4674205E4DA30021D6C5 /* ChatDetailTableViewCell.m */,
+				ABF5C67E205EA5E7003B5050 /* ChatTextTableViewCell.h */,
+				ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,10 +435,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */,
+				ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */,
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
-				04EE4675205E4DA30021D6C5 /* ChatDetailTableViewCell.m in Sources */,
 				04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

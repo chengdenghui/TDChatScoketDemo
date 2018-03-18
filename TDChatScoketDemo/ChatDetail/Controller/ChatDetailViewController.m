@@ -7,7 +7,7 @@
 //
 
 #import "ChatDetailViewController.h"
-#import "ChatDetailTableViewCell.h"
+#import "ChatTextTableViewCell.h"
 
 @interface ChatDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -42,10 +42,10 @@
 {
     //详情
     static NSString *cellID = @"cellId";
-    ChatDetailTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:cellID];
+    ChatTextTableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:cellID];
     
     if (!cell) {
-        cell = [[ChatDetailTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell = [[ChatTextTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.model = nil;

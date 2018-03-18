@@ -1,14 +1,14 @@
 //
-//  ChatDetailTableViewCell.m
+//  ChatTextTableViewCell.m
 //  TDChatScoketDemo
 //
-//  Created by mac on 2018/3/18.
+//  Created by 程登伟 on 2018/3/18.
 //  Copyright © 2018年 hui. All rights reserved.
 //
 
-#import "ChatDetailTableViewCell.h"
+#import "ChatTextTableViewCell.h"
 
-@interface ChatDetailTableViewCell()
+@interface ChatTextTableViewCell()
 
 @property(nonatomic,strong)UIImageView *headerImageView; //头像
 @property(nonatomic,strong)UILabel *nameLabel; //昵称
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation ChatDetailTableViewCell
+@implementation ChatTextTableViewCell
 
 -(void)setModel:(id)model
 {
@@ -111,3 +111,4 @@
 
 
 @end
+
