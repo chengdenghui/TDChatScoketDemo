@@ -17,6 +17,8 @@
 		0470701E205E117200F25CD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707018205E117200F25CD8 /* main.m */; };
 		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
 		04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702F205E142E00F25CD8 /* ChatDetailViewController.m */; };
+		04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */; };
+		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,11 @@
 		0470702C205E139800F25CD8 /* MainChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListViewController.m; sourceTree = "<group>"; };
 		0470702E205E142E00F25CD8 /* ChatDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDetailViewController.h; sourceTree = "<group>"; };
 		0470702F205E142E00F25CD8 /* ChatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
+		04707031205E16FD00F25CD8 /* MainChatListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListTableViewCell.h; sourceTree = "<group>"; };
+		04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListTableViewCell.m; sourceTree = "<group>"; };
+		58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDChatScoketDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,8 @@
 				04706FF2205E0FAB00F25CD8 /* TDChatScoketDemoTests */,
 				04706FFD205E0FAB00F25CD8 /* TDChatScoketDemoUITests */,
 				04706FD8205E0FAB00F25CD8 /* Products */,
+				729E41EC7201EDA9EB180B74 /* Pods */,
+				8EA3791A644E45162C10E330 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,8 +216,27 @@
 		0470702A205E138200F25CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04707031205E16FD00F25CD8 /* MainChatListTableViewCell.h */,
+				04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		729E41EC7201EDA9EB180B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */,
+				58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EA3791A644E45162C10E330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04707003205E0FAB00F25CD8 /* Build configuration list for PBXNativeTarget "TDChatScoketDemo" */;
 			buildPhases = (
+				6027CC6B6E2522386342EF01 /* [CP] Check Pods Manifest.lock */,
 				04706FD3205E0FAB00F25CD8 /* Sources */,
 				04706FD4205E0FAB00F25CD8 /* Frameworks */,
 				04706FD5205E0FAB00F25CD8 /* Resources */,
+				45AF2A2ED18A904BE359533F /* [CP] Embed Pods Frameworks */,
+				C984CEC817AE1E2C1C769FEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,11 +371,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45AF2A2ED18A904BE359533F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6027CC6B6E2522386342EF01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDChatScoketDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C984CEC817AE1E2C1C769FEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04706FD3205E0FAB00F25CD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */,
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
@@ -508,10 +592,12 @@
 		};
 		04707004205E0FAB00F25CD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,10 +607,12 @@
 		};
 		04707005205E0FAB00F25CD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/TDChatScoketDemo/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huixiao.TDChatScoketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
