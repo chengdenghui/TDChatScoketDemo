@@ -1,29 +1,28 @@
 //
-//  ChatTextTableViewCell.m
+//  ChatImageTableViewCell.m
 //  TDChatScoketDemo
 //
 //  Created by 程登伟 on 2018/3/18.
 //  Copyright © 2018年 hui. All rights reserved.
 //
 
-#import "ChatTextTableViewCell.h"
+#import "ChatImageTableViewCell.h"
 
-@interface ChatTextTableViewCell()
+@interface ChatImageTableViewCell()
 
 @property(nonatomic,strong)UIImageView *headerImageView; //头像
 @property(nonatomic,strong)UILabel *nameLabel; //昵称
-@property(nonatomic,strong)UILabel *contentLabel; //文字内容
+@property(nonatomic,strong)UIImageView *contentImageView; //图片内容
 
 @end
 
 
-@implementation ChatTextTableViewCell
+@implementation ChatImageTableViewCell
 
 -(void)setModel:(id)model
 {
     self.headerImageView.image =[UIImage imageNamed:@"userhead"];
     self.nameLabel.text =@"小明";
-    self.contentLabel.text =@"小明收到信息回家吃饭啦";
     
     [self updateConstraintsIfNeeded];
     [self setNeedsUpdateConstraints];
@@ -46,11 +45,11 @@
         make.height.equalTo(@20);
     }];
     
-    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.contentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.nameLabel.mas_bottom).offset(3);
         make.right.equalTo(self.nameLabel.mas_right);
         make.width.equalTo(@(SCREEN_WITH/2));
-        make.height.equalTo(@40);
+        make.height.equalTo(@100);
     }];
     
 }
@@ -80,23 +79,19 @@
         _nameLabel =[[UILabel alloc] init];
         _nameLabel.backgroundColor =[UIColor redColor];
         _nameLabel.font =[UIFont systemFontOfSize:14];
-        _nameLabel.textAlignment = NSTextAlignmentRight;
         [self addSubview:_nameLabel];
     }
     return _nameLabel;
 }
 
--(UILabel *)contentLabel
+-(UIImageView *)contentImageView
 {
-    if (!_contentLabel) {
-        _contentLabel =[[UILabel alloc] init];
-        _contentLabel.backgroundColor =[UIColor purpleColor];
-        _contentLabel.numberOfLines = 0;
-        _contentLabel.font =[UIFont systemFontOfSize:14];
-        _contentLabel.textAlignment = NSTextAlignmentRight;
-        [self addSubview:_contentLabel];
+    if (!_contentImageView) {
+        _contentImageView =[[UIImageView alloc] init];
+        _contentImageView.backgroundColor =[UIColor purpleColor];
+        [self addSubview:_contentImageView];
     }
-    return _contentLabel;
+    return _contentImageView;
 }
 
 
@@ -113,4 +108,5 @@
 
 
 @end
+
 
