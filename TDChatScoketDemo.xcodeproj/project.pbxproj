@@ -16,6 +16,7 @@
 		0470701D205E117200F25CD8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04707017205E117200F25CD8 /* Info.plist */; };
 		0470701E205E117200F25CD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707018205E117200F25CD8 /* main.m */; };
 		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
+		04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702F205E142E00F25CD8 /* ChatDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		04707018205E117200F25CD8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0470702B205E139800F25CD8 /* MainChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListViewController.h; sourceTree = "<group>"; };
 		0470702C205E139800F25CD8 /* MainChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListViewController.m; sourceTree = "<group>"; };
+		0470702E205E142E00F25CD8 /* ChatDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDetailViewController.h; sourceTree = "<group>"; };
+		0470702F205E142E00F25CD8 /* ChatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 		04707020205E134700F25CD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0470702E205E142E00F25CD8 /* ChatDetailViewController.h */,
+				0470702F205E142E00F25CD8 /* ChatDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
+				04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
