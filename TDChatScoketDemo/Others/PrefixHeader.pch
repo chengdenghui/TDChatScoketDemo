@@ -13,6 +13,6 @@
 #define SCREEN_WITH    [UIScreen mainScreen].bounds.size.width
 
 #import <Masonry.h>
-
+#import <MJExtension/MJExtension.h>
 
 #endif /* PrefixHeader_pch */

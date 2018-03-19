@@ -20,7 +20,7 @@
 
 
 //自动重连次数
-NSInteger sutoConnectCount = TCP_AutoConnectCount;
+NSInteger autoConnectCount = TCP_AutoConnectCount;
 
 @interface ChatHandler()<GCDAsyncSocketDelegate>
 
@@ -62,6 +62,41 @@ NSInteger sutoConnectCount = TCP_AutoConnectCount;
 }
 
 
+#pragma mark ---Delegate----
+#pragma mark ---scoketDelegate
+//接收到消息
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
+{
+    //转为明文消息
+    NSString *secretStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    //去除'\n'
+    secretStr = [secretStr stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    //转为消息模型(具体传输的json包裹内容,加密方式,包头设定什么的需要和后台协商,操作方式根据项目而定)
+    ChatModel *messageModel = [ChatModel mj_setKeyValues:secretStr];
+    
+    //接收到服务器的心跳
+    if ([messageModel.beatID isEqualToString:TCP_beatBody]) {
+        
+        //未接到服务器心跳次数置为0
+        _sendBeatCount = 0;
+        NSLog(@"------接收到服务器心跳--------");
+        return;
+    }
+    
+    //消息类型 (消息类型这里是以和服务器协商后自定义的通信协议来设定 , 包括字段名,具体的通信逻辑相关 . 当然也可以用数字来替代下述的字段名,使用switch效率更高)
+    ChatMessageType messageType     = ChatMessageContentType_Unknow;
+
+    
+    
+    
+    
+    
+}
+
+
+
+
+
 
 
 
@@ -78,39 +113,67 @@ NSInteger sutoConnectCount = TCP_AutoConnectCount;
     }
 }
 
-#pragma mark ----主动断开连接
--(void)executeDisconnectServer
-{
-    
-    
-}
-
 #pragma mark ----添加代理
 -(void)addDelegate:(id<ChatHandlerDelegate>)delegate deleagteQueue:(dispatch_queue_t)queue
 {
-    
-    
+    if (![self.delegates containsObject:delegate]) {
+        [self.delegates addObject:delegate];
+    }
     
 }
 
 #pragma mark ----移除代理
 -(void)removeDeleagte:(id<ChatHandlerDelegate>)delegate
 {
-    
-    
-    
+    [self.delegates removeObject:delegate];
 }
 
 #pragma mark ----发送消息
 -(void)sendMessage:(ChatModel *)chatModel timeOut:(NSInteger)timeOut tag:(long)tag
 {
-    
+    //将模型转化为JSON字符串
+    NSString *messageJson = chatModel.mj_JSONString;
+    //以"\n"分割此条消息 , 支持的分割方式有很多种例如\r\n、\r、\n、空字符串,不支持自定义分隔符,具体的需要和服务器协商分包方式 , 这里以\n分包
+    /*
+     如不进行分包,那么服务器如果在短时间里收到多条消息 , 那么就会出现粘包的现象 , 无法识别哪些数据为单独的一条消息 .
+     对于普通文本消息来讲 , 这里的处理已经基本上足够 . 但是如果是图片进行了分割发送,就会形成多个包 , 那么这里的做法就显得并不健全,严谨来讲,应该设置包头,把该条消息的外信息放置于包头中,例如图片信息,该包长度等,服务器收到后,进行相应的分包,拼接处理.
+     */
+    messageJson = [messageJson stringByAppendingString:@"\n"];
+    //base64编码成data类型
+    NSData *messageData =[[NSData alloc] initWithBase64EncodedString:messageJson options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    //写入数据
+    [_chatScoket writeData:messageData withTimeout:1 tag:1];
     
 }
 
 
+#pragma mark ----主动断开连接
+-(void)executeDisconnectServer
+{
+    //更新scoket连接状态
+    _connectStatus = SocketConnectStatus_UnConnected;
+    [self disconnect];
+}
 
+#pragma mark ---连接中断
+- (void)serverInterruption
+{
+    //更新soceket连接状态
+    _connectStatus = SocketConnectStatus_UnConnected;
+    [self disconnect];
+}
 
+-(void)disconnect
+{
+    //断开连接
+    [_chatScoket disconnect];
+    //关闭心跳定时器
+    dispatch_source_cancel(self.beatTimer);
+    //未接收服务器心跳次数 置为初始化
+    _sendBeatCount = 0;
+    //自动重连次数 置为初始化
+    autoConnectCount = TCP_AutoConnectCount;
+}
 
 
 
