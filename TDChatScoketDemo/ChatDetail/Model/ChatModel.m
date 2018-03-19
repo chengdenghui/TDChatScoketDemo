@@ -1,14 +1,14 @@
 //
-//  ChatDetailModel.m
+//  ChatModel.m
 //  TDChatScoketDemo
 //
-//  Created by 程登伟 on 2018/3/18.
+//  Created by mac on 2018/3/19.
 //  Copyright © 2018年 hui. All rights reserved.
 //
 
-#import "ChatDetailModel.h"
+#import "ChatModel.h"
 
-@implementation ChatDetailModel
+@implementation ChatModel
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
@@ -37,14 +37,7 @@ NS_INLINE NSString *getSendTime() {
     
 }
 
-
 @end
-
-
-
-
-
-
 
 
 

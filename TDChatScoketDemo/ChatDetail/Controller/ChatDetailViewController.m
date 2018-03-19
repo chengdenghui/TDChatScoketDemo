@@ -30,11 +30,23 @@
     [self.view addSubview:self.keyboardView];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //系统键盘弹起通知
+    [[NSNotificationCenter defaultCenter] addObserver:self.keyboardView selector:@selector(systemKeyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
+    
+}
+
+
+
+
 
 #pragma mark --tableViewDeleagte----
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.messageArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -53,7 +65,7 @@
         cell = [[ChatTextTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.model = nil;
+    cell.model = self.messageArray[indexPath.row];
     return cell;
 }
 
@@ -61,6 +73,18 @@
 {
     
     
+}
+
+#pragma mark---action----
+#pragma mark - 发送文本/表情消息
+- (void)sendTextMessage:(NSString *)text
+{
+    //创建文本消息
+    ChatModel *model =[[ChatModel alloc]init];
+    model.content = [[ChatContentModel alloc] init];
+    model.content.text = text;
+    [self.messageArray addObject:model];
+    [self.tableview reloadData];
 }
 
 
@@ -92,6 +116,13 @@
     if (!_keyboardView) {
         _keyboardView =[[ChatKeyboardView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49, SCREEN_WITH, 49)];
         _keyboardView.backgroundColor =[UIColor orangeColor];
+        
+        //传入当前控制器,方便打开相册(如果放到控制器,后期的逻辑过多,控制器会更加臃肿)
+        __weak typeof(self) weakself = self;
+        [_keyboardView textCallSendTextBlock:^(NSString *text) {
+            NSLog(@"%@",text);
+            [weakself sendTextMessage:text];
+        }];
         
     }
     return _keyboardView;

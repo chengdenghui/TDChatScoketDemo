@@ -19,11 +19,11 @@
 
 @implementation ChatTextTableViewCell
 
--(void)setModel:(id)model
+-(void)setModel:(ChatModel *)model
 {
     self.headerImageView.image =[UIImage imageNamed:@"userhead"];
     self.nameLabel.text =@"小明";
-    self.contentLabel.text =@"小明收到信息回家吃饭啦";
+    self.contentLabel.text = model.content.text;
     
     [self updateConstraintsIfNeeded];
     [self setNeedsUpdateConstraints];

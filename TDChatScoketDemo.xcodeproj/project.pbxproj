@@ -18,9 +18,11 @@
 		0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702C205E139800F25CD8 /* MainChatListViewController.m */; };
 		04707030205E142E00F25CD8 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470702F205E142E00F25CD8 /* ChatDetailViewController.m */; };
 		04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */; };
+		048A05B7205FAA3000429ED8 /* ChatHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A05B6205FAA3000429ED8 /* ChatHandler.m */; };
+		048A05BA205FAAE700429ED8 /* ChatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A05B9205FAAE700429ED8 /* ChatUtil.m */; };
+		048A05BD205FACA900429ED8 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048A05BC205FACA900429ED8 /* ChatModel.m */; };
 		ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */; };
 		ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C682205EA73C003B5050 /* ChatImageTableViewCell.m */; };
-		ABF5C68A205EAFF2003B5050 /* ChatDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */; };
 		ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C68D205EB032003B5050 /* ChatListModel.m */; };
 		ABF5C694205EB4BF003B5050 /* ChatKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF5C693205EB4BF003B5050 /* ChatKeyboardView.m */; };
 		E144DE7F26D48EB819F6A9AF /* libPods-TDChatScoketDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */; };
@@ -64,6 +66,12 @@
 		0470702F205E142E00F25CD8 /* ChatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
 		04707031205E16FD00F25CD8 /* MainChatListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainChatListTableViewCell.h; sourceTree = "<group>"; };
 		04707032205E16FD00F25CD8 /* MainChatListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainChatListTableViewCell.m; sourceTree = "<group>"; };
+		048A05B5205FAA3000429ED8 /* ChatHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatHandler.h; sourceTree = "<group>"; };
+		048A05B6205FAA3000429ED8 /* ChatHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatHandler.m; sourceTree = "<group>"; };
+		048A05B8205FAAE700429ED8 /* ChatUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatUtil.h; sourceTree = "<group>"; };
+		048A05B9205FAAE700429ED8 /* ChatUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatUtil.m; sourceTree = "<group>"; };
+		048A05BB205FACA900429ED8 /* ChatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		048A05BC205FACA900429ED8 /* ChatModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
 		04EE4672205E4B380021D6C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,8 +80,6 @@
 		ABF5C67F205EA5E7003B5050 /* ChatTextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextTableViewCell.m; sourceTree = "<group>"; };
 		ABF5C681205EA73C003B5050 /* ChatImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatImageTableViewCell.h; sourceTree = "<group>"; };
 		ABF5C682205EA73C003B5050 /* ChatImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatImageTableViewCell.m; sourceTree = "<group>"; };
-		ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailModel.m; sourceTree = "<group>"; };
-		ABF5C689205EAFF2003B5050 /* ChatDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDetailModel.h; sourceTree = "<group>"; };
 		ABF5C68C205EB032003B5050 /* ChatListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatListModel.h; sourceTree = "<group>"; };
 		ABF5C68D205EB032003B5050 /* ChatListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatListModel.m; sourceTree = "<group>"; };
 		ABF5C692205EB4BF003B5050 /* ChatKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatKeyboardView.h; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 			children = (
 				04707027205E138200F25CD8 /* MainChatList */,
 				0470701F205E134700F25CD8 /* ChatDetail */,
+				048A05B4205FAA0200429ED8 /* ChatHandler */,
 				0470700F205E117200F25CD8 /* Others */,
 			);
 			path = TDChatScoketDemo;
@@ -231,6 +238,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		048A05B4205FAA0200429ED8 /* ChatHandler */ = {
+			isa = PBXGroup;
+			children = (
+				048A05B5205FAA3000429ED8 /* ChatHandler.h */,
+				048A05B6205FAA3000429ED8 /* ChatHandler.m */,
+				048A05B8205FAAE700429ED8 /* ChatUtil.h */,
+				048A05B9205FAAE700429ED8 /* ChatUtil.m */,
+			);
+			path = ChatHandler;
+			sourceTree = "<group>";
+		};
 		729E41EC7201EDA9EB180B74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +269,8 @@
 		ABF5C687205EAFF2003B5050 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABF5C689205EAFF2003B5050 /* ChatDetailModel.h */,
-				ABF5C688205EAFF2003B5050 /* ChatDetailModel.m */,
+				048A05BB205FACA900429ED8 /* ChatModel.h */,
+				048A05BC205FACA900429ED8 /* ChatModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,11 +473,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04707033205E16FD00F25CD8 /* MainChatListTableViewCell.m in Sources */,
-				ABF5C68A205EAFF2003B5050 /* ChatDetailModel.m in Sources */,
 				ABF5C683205EA73C003B5050 /* ChatImageTableViewCell.m in Sources */,
+				048A05BD205FACA900429ED8 /* ChatModel.m in Sources */,
+				048A05BA205FAAE700429ED8 /* ChatUtil.m in Sources */,
 				ABF5C680205EA5E7003B5050 /* ChatTextTableViewCell.m in Sources */,
 				ABF5C68E205EB032003B5050 /* ChatListModel.m in Sources */,
 				ABF5C694205EB4BF003B5050 /* ChatKeyboardView.m in Sources */,
+				048A05B7205FAA3000429ED8 /* ChatHandler.m in Sources */,
 				0470701E205E117200F25CD8 /* main.m in Sources */,
 				04707019205E117200F25CD8 /* AppDelegate.m in Sources */,
 				0470702D205E139800F25CD8 /* MainChatListViewController.m in Sources */,
