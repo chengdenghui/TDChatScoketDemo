@@ -73,6 +73,7 @@
 		048A05BB205FACA900429ED8 /* ChatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
 		048A05BC205FACA900429ED8 /* ChatModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
 		04EE4672205E4B380021D6C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04FE077520609C1500100BB1 /* ChatConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatConfig.h; sourceTree = "<group>"; };
 		58863FE0D7F9D7FE066FC206 /* Pods-TDChatScoketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5D63AB6C83F1715BC4945F2D /* Pods-TDChatScoketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDChatScoketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDChatScoketDemo/Pods-TDChatScoketDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A771CF26CBCA590B4ED9355E /* libPods-TDChatScoketDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDChatScoketDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +242,7 @@
 		048A05B4205FAA0200429ED8 /* ChatHandler */ = {
 			isa = PBXGroup;
 			children = (
+				04FE077520609C1500100BB1 /* ChatConfig.h */,
 				048A05B5205FAA3000429ED8 /* ChatHandler.h */,
 				048A05B6205FAA3000429ED8 /* ChatHandler.m */,
 				048A05B8205FAAE700429ED8 /* ChatUtil.h */,

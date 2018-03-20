@@ -13,7 +13,7 @@
 
 @required
 //接收消息代理
--(void)didreeceivemessage:(ChatModel *)chatModel type:(ChatMessageType)messageType;
+-(void)didReceiveMessage:(ChatModel *)chatModel type:(ChatMessageType)messageType;
 
 @optional
 //发送消息超时代里

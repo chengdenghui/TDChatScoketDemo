@@ -9,8 +9,9 @@
 #import "ChatDetailViewController.h"
 #import "ChatTextTableViewCell.h"
 #import "ChatKeyboardView.h"
+#import "ChatHandler.h"
 
-@interface ChatDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ChatDetailViewController ()<UITableViewDelegate,UITableViewDataSource,ChatHandlerDelegate>
 
 @property(nonatomic,strong)UITableView *tableview;
 @property(nonatomic,strong)ChatKeyboardView *keyboardView; //自定义键盘
@@ -28,6 +29,9 @@
     
     [self.view addSubview:self.tableview];
     [self.view addSubview:self.keyboardView];
+    
+    //注册成为handler代理
+    [[ChatHandler shareInstance] addDelegate:self deleagteQueue:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -38,6 +42,54 @@
     [[NSNotificationCenter defaultCenter] addObserver:self.keyboardView selector:@selector(systemKeyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
     
 }
+
+
+#pragma mark - 接收消息
+- (void)didReceiveMessage:(ChatModel *)chatModel type:(ChatMessageType)messageType
+{
+    switch (messageType) {
+            //普通消息
+        case ChatMessageType_Normal:
+        {
+            [self.messageArray addObject:chatModel];
+            [self.tableview reloadData];
+
+        }
+            break;
+            //普通消息成功回执
+        case ChatMessageType_NormalReceipt:
+        {
+            NSPredicate *predict = [NSPredicate predicateWithFormat:@"sendTime = %@",chatModel.sendTime];
+            ChatModel *refreshModel = [self.messageArray filteredArrayUsingPredicate:predict].firstObject;
+            refreshModel.isSend = @1;
+            refreshModel.isSending = @0;
+            [self.tableview reloadData];
+        }
+            break;
+            //失败回执
+        case ChatMessageType_InvalidReceipt:
+        {
+        }
+            break;
+            //撤回消息回执
+        case ChatMessageType_RepealReceipt:
+        {
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,15 +132,23 @@
 - (void)sendTextMessage:(NSString *)text
 {
     //创建文本消息
-    ChatModel *model =[[ChatModel alloc]init];
-    model.content = [[ChatContentModel alloc] init];
-    model.content.text = text;
-    [self.messageArray addObject:model];
+    ChatModel *textModel =[[ChatModel alloc]init];
+    textModel.content = [[ChatContentModel alloc] init];
+    textModel.byMyself = @1;
+    textModel.content.text = text;
+    [self.messageArray addObject:textModel];
     [self.tableview reloadData];
+    //传输文本
+    [[ChatHandler shareInstance] sendTextMessage:textModel];
 }
 
-
-
+#pragma mark --滚动到底部
+-(void)scrollToBottom
+{
+    NSIndexPath *indexPath =[NSIndexPath indexPathForRow:self.messageArray.count inSection:0];
+    [self.tableview scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    
+}
 
 
 #pragma mark --getter-----
@@ -103,7 +163,7 @@
 #warning 注意在tableView中必须进行代理的相关设置 不然不能正常显示--------
         _tableview.delegate =self;
         _tableview.dataSource =self;
-//        _tableview.separatorStyle=UITableViewCellSeparatorStyleNone;
+        _tableview.separatorStyle=UITableViewCellSeparatorStyleNone;
         _tableview.showsVerticalScrollIndicator=NO;
         _tableview.backgroundColor =[UIColor whiteColor];
         

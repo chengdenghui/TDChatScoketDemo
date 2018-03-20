@@ -13,6 +13,7 @@
 @property(nonatomic,strong)UIImageView *headerImageView; //头像
 @property(nonatomic,strong)UILabel *nameLabel; //昵称
 @property(nonatomic,strong)UILabel *contentLabel; //文字内容
+@property(nonatomic,strong)ChatModel *chatModel;
 
 @end
 
@@ -21,9 +22,17 @@
 
 -(void)setModel:(ChatModel *)model
 {
+    _chatModel = model;
     self.headerImageView.image =[UIImage imageNamed:@"userhead"];
-    self.nameLabel.text =@"小明";
+
     self.contentLabel.text = model.content.text;
+    if (_chatModel.byMyself.integerValue) {  //我方
+            self.nameLabel.text =@"小明";
+    }
+    else{ //对方
+           self.nameLabel.text =@"小花";
+        self.nameLabel.textAlignment =NSTextAlignmentLeft;
+    }
     
     [self updateConstraintsIfNeeded];
     [self setNeedsUpdateConstraints];
@@ -32,23 +41,40 @@
 -(void)updateConstraints
 {
     [super updateConstraints];
-    [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.headerImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@10);
-        make.right.equalTo(self.mas_right).offset(-10);
+        if (_chatModel.byMyself.integerValue) {  //我方
+             make.right.equalTo(self.mas_right).offset(-10);
+        }
+        else{ //对方
+             make.left.equalTo(self.mas_left).offset(10);
+        }
         make.width.equalTo(@40);
         make.height.equalTo(@40);
     }];
+
     
-    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.nameLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.headerImageView.mas_top).offset(0);
+        if (_chatModel.byMyself.integerValue) {  //我方
         make.right.equalTo(self.headerImageView.mas_left).offset(-10);
+        }
+        else{ //对方
+        make.left.equalTo(self.headerImageView.mas_right).offset(10);
+        }
+        
         make.width.equalTo(@60);
         make.height.equalTo(@20);
     }];
     
-    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.contentLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.nameLabel.mas_bottom).offset(3);
-        make.right.equalTo(self.nameLabel.mas_right);
+        if (_chatModel.byMyself.integerValue) {  //我方
+            make.right.equalTo(self.nameLabel.mas_right);
+        }
+        else{ //对方
+            make.left.equalTo(self.nameLabel.mas_left);
+        }
         make.width.equalTo(@(SCREEN_WITH/2));
         make.height.equalTo(@40);
     }];
