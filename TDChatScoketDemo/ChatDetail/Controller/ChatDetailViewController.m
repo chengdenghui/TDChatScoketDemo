@@ -53,7 +53,7 @@
         {
             [self.messageArray addObject:chatModel];
             [self.tableview reloadData];
-
+            [self scrollToBottom];
         }
             break;
             //普通消息成功回执
@@ -138,6 +138,7 @@
     textModel.content.text = text;
     [self.messageArray addObject:textModel];
     [self.tableview reloadData];
+    [self scrollToBottom];
     //传输文本
     [[ChatHandler shareInstance] sendTextMessage:textModel];
 }
@@ -145,7 +146,7 @@
 #pragma mark --滚动到底部
 -(void)scrollToBottom
 {
-    NSIndexPath *indexPath =[NSIndexPath indexPathForRow:self.messageArray.count inSection:0];
+    NSIndexPath *indexPath =[NSIndexPath indexPathForRow:self.messageArray.count -1 inSection:0];
     [self.tableview scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     
 }
@@ -175,7 +176,7 @@
 {
     if (!_keyboardView) {
         _keyboardView =[[ChatKeyboardView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49, SCREEN_WITH, 49)];
-        _keyboardView.backgroundColor =[UIColor orangeColor];
+        _keyboardView.backgroundColor =[UIColor whiteColor];
         
         //传入当前控制器,方便打开相册(如果放到控制器,后期的逻辑过多,控制器会更加臃肿)
         __weak typeof(self) weakself = self;

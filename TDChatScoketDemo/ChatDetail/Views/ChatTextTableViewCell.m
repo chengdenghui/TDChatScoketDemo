@@ -32,6 +32,7 @@
     else{ //对方
            self.nameLabel.text =@"小花";
         self.nameLabel.textAlignment =NSTextAlignmentLeft;
+        self.contentLabel.backgroundColor =[UIColor orangeColor];
     }
     
     [self updateConstraintsIfNeeded];
@@ -94,7 +95,6 @@
 {
     if (!_headerImageView) {
         _headerImageView =[[UIImageView alloc] init];
-        _headerImageView.backgroundColor =[UIColor orangeColor];
         [self addSubview:_headerImageView];
     }
     return _headerImageView;
@@ -104,7 +104,6 @@
 {
     if (!_nameLabel) {
         _nameLabel =[[UILabel alloc] init];
-        _nameLabel.backgroundColor =[UIColor redColor];
         _nameLabel.font =[UIFont systemFontOfSize:14];
         _nameLabel.textAlignment = NSTextAlignmentRight;
         [self addSubview:_nameLabel];
@@ -116,7 +115,6 @@
 {
     if (!_contentLabel) {
         _contentLabel =[[UILabel alloc] init];
-        _contentLabel.backgroundColor =[UIColor purpleColor];
         _contentLabel.numberOfLines = 0;
         _contentLabel.font =[UIFont systemFontOfSize:14];
         _contentLabel.textAlignment = NSTextAlignmentRight;

@@ -92,9 +92,22 @@ static CGFloat defaultInputHeight     = 35;  //默认输入框 35
 #pragma mark ---action----
 #pragma mark ---顶部消息操作栏部分点击事件-----
 //切换至语音录制
--(void)audioButtonClick:(UIButton *)sender
+-(void)audioButtonClick:(UIButton *)audioButton
 {
+    audioButton.selected = !audioButton.selected;
+    //重置其他按钮selected
+    self.swtFaceButton.selected = NO;
+    self.swtHeadleButton.selected = NO;
     
+    if (audioButton.selected) {
+        [_msgTextView resignFirstResponder];
+        self.msgTextView.hidden = YES;
+        [self customKeyboardMove:SCREEN_HEIGHT - defaultMsgBarHeight]; //默认高度 输入栏 49
+    }else{
+        self.msgTextView.hidden = NO;
+        [self.msgTextView becomeFirstResponder];
+    }
+    audioButton.selected = !_msgTextView.isFirstResponder;
     
 }
 
